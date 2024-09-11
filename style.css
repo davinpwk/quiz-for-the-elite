@@ -1,0 +1,96 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%);
+}
+
+.title-container{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.title{
+    font-family: "Bungee Tint", sans-serif;
+    font-size: 3rem;
+}
+
+/* Quiz Container */
+.quiz-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 50px;
+}
+
+/* Quiz Question */
+.quiz-question {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Quiz Input */
+.quiz-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.quiz-input:focus {
+    border-color: #74ebd5;
+    outline: none;
+}
+
+/* Submit Button */
+.quiz-submit {
+    padding: 12px 20px;
+    font-size: 18px;
+    background-color: #74ebd5;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quiz-submit:hover {
+    background-color: #5edbce;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .title{
+        font-size: 2rem;
+    }
+
+    .quiz-question {
+        font-size: 22px;
+    }
+
+    .quiz-input, .quiz-submit {
+        font-size: 16px;
+    }
+}
+
+/* Google Fonts - Add this inside your <head> tag */
