@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="success.css">
 </head>
 <body>
-    <embed src="../sounds/wide_putin.mp3" width="180" height="90" hidden="true"/>
+    <!-- <embed src="../sounds/wide_putin.mp3" width="180" height="90" hidden="true"/> -->
     <div class="success-container">
         <h2> W SIGMA 🫡 </h2>
         <img src="../assets/wide-putin.gif" alt="Success GIF" class="success-gif">
@@ -15,6 +15,9 @@
     </div>
 
     <script>
+        var audio = new Audio("../sounds/wide_putin.mp3");
+        audio.play();
+
         setTimeout(() => {
             window.location.href = "../index.html";
         }, 4000);
